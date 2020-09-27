@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+h1{
+text-align:center;
+}
+body{
+background-color:pink;
+}
+input[type=text], [type=number],[type=email] {
+  width: 20%;
+  padding: 5px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 15%;
+  background-color: #999966;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form{
+text-align:center;
+}
+</style>
+</head>
+<body>
+	<h1>Welcome to AP Auctions, Please Enter Bid.</h1>
+	<form action="auction" name="form">
+	<label><b>Item ID:</b> </label><input type="number" name="id" /><br>
+	<label><b>Item Name:</b> </label><input type="text" name="name"/><br>
+	<label><b>Your Name:</b> </label><input type="text" name="yname"/><br>
+	<label><b>your Email Address:</b> </label><input type="email" name="email"/><br>
+	<label><b>Amount Bid: </b></label><input type="number" name="bid"/><br>
+	<label><b>Auto-increment bid to match other bidders?:</b></label><input type="checkbox" name="ch"/><br><br>
+	
+	<input type="submit" value="Submit Bid"/>
+	
+	
+	</form>
+</body>
+</html>
